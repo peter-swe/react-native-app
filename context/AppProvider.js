@@ -22,7 +22,8 @@ const AppProvider = ({children}) => {
   }, []);
 
   const handleOnChange = (value, name) => {
-    setPlayer({[name]: value});
+    // setPlayer({[name]: value});
+    setPlayer({...player, [name]: value});
   };
   const onAdd = async () => {
     // const scorers = [...players];
